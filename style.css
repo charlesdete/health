@@ -1,0 +1,123 @@
+body {
+  background: #1e1e66;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background-size: cover;
+}
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: padding-box;
+}
+.login {
+  width: 350px;
+  border: 2px solid #fbf6f6;
+  padding: 20px;
+  background: #eee;
+  border-radius: 50px;
+  height: 70vh;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+input {
+  display: flex;
+  border: 1px solid #753434;
+  width: 330px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+button {
+  vertical-align: middle;
+  width: 337px;
+  border-radius: 5px;
+  margin-left: 1px;
+}
+button:hover {
+  background-color: #1e1e66;
+}
+.registration {
+  width: 380px;
+  border: 3px solid #fffcfc;
+  padding: 20px;
+  background: #eee;
+  height: 60vh;
+  border-radius: 45px;
+}
+.registerbtn {
+  width: 340px;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+.registerbtn:hover {
+  background-color: #1e1e66;
+  margin-left: 1px;
+}
+.registration input[type] {
+  justify-content: center;
+  align-items: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 340px;
+  height: 18px;
+  margin-left: 8px;
+  border-radius: 5px;
+}
+label {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.home {
+  width: 380px;
+  border: 3px solid #fffcfc;
+  padding: 20px;
+  background: #eee;
+  height: 60vh;
+  border-radius: 45px;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.home input {
+  margin-left: 10px;
+}
+.updatebtn {
+  margin-left: 3px;
+}
+.remember {
+  justify-items: center;
+  display: inline;
+  align-items: center;
+}
+
+.remember input[type="checkbox"] {
+  display: inline;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+/*dashboard*/
+.card {
+  border-radius: 10%;
+  border-width: 50px;
+  background: #eee;
+  height: 15rem;
+  box-shadow: #5854c7;
+  border-width: 3cap;
+}
+.card-header {
+  margin-left: 98px;
+}
+
+.card1 {
+  border-radius: 10%;
+  border-width: 60px;
+  background: #eee;
+  height: 19rem;
+  box-shadow: #5854c7;
+  border-width: 3cap;
+}
