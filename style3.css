@@ -80,12 +80,14 @@ ul li a:hover {
 }
 .content h1 {
   font-family: "Times New Roman", Times, serif;
-  font-size: 45px;
+  font-size: 65px;
   padding-left: 20px;
   margin-top: 3vh;
   margin-bottom: 10px;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   color: #fff;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
 }
 
 .content .cn {
@@ -113,8 +115,62 @@ ul li a:hover {
 }
 .content span {
   color: #f7f6f6;
-  font-size: 60px;
+  font-size: 70px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 .content p {
   color: #f7f6f6;
+  font-size: 18px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.image-circles {
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 400px;
+  height: 300px;
+}
+
+.circle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  border: 4px solid rgba(255, 255, 255, 0.8);
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.circle:hover {
+  transform: scale(1.1);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.circle1 {
+  top: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.circle2 {
+  top: 60px;
+  right: 120px;
+  z-index: 2;
+}
+
+.circle3 {
+  top: 120px;
+  right: 240px;
+  z-index: 1;
 }
