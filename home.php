@@ -27,10 +27,6 @@
          <div class="content">
           <h1>Health<br><span>& </span> <br>Lifestyle </h1>
         <p  class="par"> "Fuel Your Life: Where Healthy Choices Meet Vibrant Living!"</p>
-      
-        <span>JOIN US</span><br>
-      <button class="cn" ><a href="login.php">Sign in</a></button>
-      <button class="cn"> <a href="registration.php">Create an account</a></button>
       </div>
    </div>
 </body>
