@@ -32,13 +32,13 @@
 }
 .menu {
   width: 400px;
-  float: left;
+  float: right;
   height: 70px;
 }
 ul {
-  float: left;
+  float: right;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 ul li {

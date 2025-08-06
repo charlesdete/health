@@ -11,11 +11,10 @@
        <h2 class="logo">Health and Lifestyle</h2>
          </div>
            <div class="menu">
-            <!-- <ul>
-              <li><a href="about.html">ABOUT</a></li>
-              <li><a href="services.html">SERVICES</a></li>
-              <li><a href="contact.html">CONTACT</a></li>
-            </ul> -->
+            <ul>
+              <li><a href="blog.php">BLOGS</a></li>
+              <li><a href="about.php">ABOUT US</a></li>
+            </ul>
            </div>
 
          </div>
