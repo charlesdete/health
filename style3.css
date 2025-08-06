@@ -81,7 +81,7 @@ ul li a:hover {
 
 .content .par.tagline {
   position: absolute;
-  bottom: 80px;
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -90,6 +90,7 @@ ul li a:hover {
   padding: 20px;
   margin: 0;
   width: 100%;
+  z-index: 4;
 }
 .content h1 {
   font-family: "Times New Roman", Times, serif;
