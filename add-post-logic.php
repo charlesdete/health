@@ -54,7 +54,7 @@ $categories = mysqli_query($conn,$query);
          //make sure image is not too big.
          if ($thumbnail['size'] < 20_000_000 ){
 
-           //upload thumbnail
+           //upload thumbnail hhhhhhhhhhhh
             move_uploaded_file($thumbnail_tmp_name,$thumbnail_destination_path);
          }else {
             $_SESSION['add-post'] = "file size too big.Should be less than 2mb";
