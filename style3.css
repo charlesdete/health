@@ -15,11 +15,13 @@
   height: 60px;
   margin: auto;
   padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .icon {
-  width: 200px;
-  float: left;
+  width: auto;
   height: 70px;
 }
 .logo {
@@ -27,19 +29,18 @@
   font-size: x-large;
   font-family: Arial, Helvetica, sans-serif;
   padding-left: 20px;
-  float: left;
   padding-top: 10px;
 }
 .menu {
-  width: 400px;
-  float: right;
+  width: auto;
   height: 70px;
 }
 ul {
-  float: right;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 ul li {
   list-style: none;
