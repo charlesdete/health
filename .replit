@@ -5,7 +5,7 @@ run = "php home.php"
 channel = "stable-25_05"
 
 [deployment]
-run = ["sh", "-c", "php run"]
+run = ["sh", "-c", "php home.php"]
 
 [workflows]
 runButton = "Run"
