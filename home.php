@@ -29,10 +29,9 @@
         <p  class="par"> "Fuel Your Life: Where Healthy Choices Meet Vibrant Living!"</p>
       
         <span>JOIN US</span><br>
-      
       <button class="cn" ><a href="login.php">Sign in</a></button>
-      <br>
       <button class="cn"> <a href="registration.php">Create an account</a></button>
       </div>
-
+   </div>
 </body>
+</html>

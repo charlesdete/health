@@ -4,20 +4,17 @@
 }
 .main {
   width: 100%;
-  /* background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0, 5) 50%,
-    rgba(0, 0, 0, 0, 5) 50%
-  ); */
-  background-image: url(images/health1.jpeg);
+  background: linear-gradient(135deg, #2e8b57, #228b22, #32cd32);
   background-position: center;
   background-size: cover;
-  height: 109vh;
+  height: 100vh;
+  overflow: hidden;
 }
 .navbar {
   width: 1200px;
-  height: 75px;
+  height: 60px;
   margin: auto;
+  padding-top: 10px;
 }
 
 .icon {
@@ -67,6 +64,7 @@ ul li a:hover {
   width: 330px;
   float: left;
   margin-left: 270px;
+  margin-top: 5px;
 }
 .srch {
   font-family: "Times New Roman", Times, serif;
@@ -118,19 +116,22 @@ ul li a:hover {
   margin: auto;
   color: #0f0b0b;
   position: relative;
+  padding-top: 5vh;
 }
 .content .par {
   padding-left: 20px;
-  padding-bottom: 25px;
+  padding-bottom: 15px;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 1.2px;
-  line-height: 30px;
+  line-height: 25px;
+  margin-bottom: 10px;
 }
 .content h1 {
   font-family: "Times New Roman", Times, serif;
-  font-size: 50px;
+  font-size: 45px;
   padding-left: 20px;
-  margin-top: 9%;
+  margin-top: 3vh;
+  margin-bottom: 10px;
   letter-spacing: 2px;
   color: #fff;
 }
@@ -140,7 +141,7 @@ ul li a:hover {
   height: 40px;
   background: #fff;
   border: none;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
   margin-left: 20px;
   font-size: 18px;
   border-radius: 10px;
