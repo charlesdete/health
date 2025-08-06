@@ -63,13 +63,13 @@ $posts = mysqli_query($conn, $query);
          </div>
           </nav>
         
-         <section>
+         <section class="search_bar">
             <form class="container search_bar-container" action="search.php" method="GET">
-                <div class="">
+                <div class="search_input_wrapper">
                     <i class="uil uil-search"></i>
-                    <input type="search" name="search" class="input-style" placeholder="search">
-                    </div></br></br>
-                    <button type="submit" name="submit" class="buton">Search</button>
+                    <input type="search" name="search" class="search_input" placeholder="Search for blog posts..." required>
+                </div>
+                <button type="submit" name="submit" class="btn search_btn">Search</button>
             </form>
            </section>
           

@@ -19,24 +19,15 @@ if(!$conn){
     die("connection failed:" .mysqli_connect_error());
 }
  
- if(isset($_GET['submit'])){
-
-    $query = "SELECT * FROM post ORDER BY date_time DESC LIMIT 2";
+ if(isset($_GET['submit']) && !empty($_GET['search'])){
+    $search_term = mysqli_real_escape_string($conn, $_GET['search']);
+    $query = "SELECT * FROM post WHERE Title LIKE '%$search_term%' OR Body LIKE '%$search_term%' ORDER BY date_time DESC";
     $posts = mysqli_query($conn, $query); 
-    $search=mysqli_num_rows($posts);
-
-    if($search > 0){
-        while ($row = mysqli_fetch_assoc($posts))
-        {
-            echo"<div>
-           <h3>".$row['Title']."</h3>
-           <h3>".$row['Body']." 
-           </div>";
-        }
-    }
+    $search_count = mysqli_num_rows($posts);
 }else{
-//      header('location:blog.php');
-//      die();
+    $query = "SELECT * FROM post ORDER BY date_time DESC";
+    $posts = mysqli_query($conn, $query);
+    $search_count = mysqli_num_rows($posts);
 }
 ?>
 
