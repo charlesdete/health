@@ -322,29 +322,7 @@ $posts=mysqli_query($conn,$query);
             </div>
           </section>
 
-          <!-- Stats Section -->
-          <section class="stats-section">
-            <div class="container">
-                <div class="stats-container">
-                    <div class="stat-item">
-                        <span class="stat-number">1000+</span>
-                        <span class="stat-label">Happy Members</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Health Articles</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">50+</span>
-                        <span class="stat-label">Expert Tips</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">24/7</span>
-                        <span class="stat-label">Support</span>
-                    </div>
-                </div>
-            </div>
-          </section>
+          
 
           <!-- Featured Post Section -->
           <?php if(mysqli_num_rows($featured_result) == 1) : ?>
@@ -399,15 +377,15 @@ $posts=mysqli_query($conn,$query);
           <?php endif ?>
 
           <!-- Latest Posts Section -->
-          <section class="posts" style="padding: 60px 0;">
+          <section class="latest-posts" style="padding: 60px 0; background: var(--color-bg);">
             <div class="container">
                 <div class="section-header">
                     <h2 class="section-title">Latest Articles</h2>
                     <p class="section-subtitle">Stay updated with our newest health and lifestyle content</p>
                 </div>
-                <div class="posts-grid">
+                <div class="posts_container">
                     <?php while ($post = mysqli_fetch_assoc($posts)): ?> 
-                    <article class="post-card">
+                    <article class="posts">
                         <div class="post_thumbnail">
                             <img src="images<?= $post['Thumbnail'] ?>" alt="<?= htmlspecialchars($post['Title']) ?>">
                         </div>
@@ -435,7 +413,7 @@ $posts=mysqli_query($conn,$query);
                 </div>
                 
                 <div style="text-align: center; margin-top: 3rem;">
-                    <a href="blog.php" class="cta-btn primary">
+                    <a href="blog.php" class="btn" style="background: var(--color-primary); color: white; padding: 12px 30px; border-radius: 25px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
                         <i class="uil uil-arrow-right"></i>
                         View All Articles
                     </a>
@@ -475,45 +453,39 @@ $posts=mysqli_query($conn,$query);
             </div> 
             <div class="container footer_container">
                 <article>
+                    <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.php">Home</a></li>
+                            <li><a href="blog.php">Blog</a></li>
+                            <li><a href="about.php">About</a></li>
+                            <li><a href="services.php">Services</a></li>
+                        </ul>
+                </article>
+                <article>
                     <h4>Categories</h4>
                         <ul>
-                            <li><a href="art.html">Art</a></li>
-                            <li><a href="wildlife.html">Wild Life</a></li>
-                            <li><a href="">Travel</a></li>
-                            <li><a href="">Music</a></li>
-                            <li><a href="">Science & Technology</a></li>
-                            <li><a href="food.html">Food</a></li>
+                            <li><a href="blog.php">Health Tips</a></li>
+                            <li><a href="blog.php">Nutrition</a></li>
+                            <li><a href="blog.php">Fitness</a></li>
+                            <li><a href="blog.php">Wellness</a></li>
                         </ul>
                 </article>
                 <article>
                     <h4>Support</h4>
                         <ul>
-                            <li><a href="">Online Support</a></li>
-                            <li><a href="">Call Numbers</a></li>
-                            <li><a href="">Email</a></li>
-                            <li><a href="">Social Numbers</a></li>
-                            <li><a href="">Social Support</a></li>
-                            <li><a href="">Location</a></li>
+                            <li><a href="mailto:support@healthlifestyle.com">Email Support</a></li>
+                            <li><a href="tel:+1234567890">Call Us</a></li>
+                            <li><a href="about.php">FAQ</a></li>
+                            <li><a href="about.php">Help Center</a></li>
                         </ul>
                 </article>
                 <article>
-                    <h4>Blog</h4>
+                    <h4>Follow Us</h4>
                         <ul>
-                            <li><a href="">Safety</a></li>
-                            <li><a href="">Repair</a></li>
-                            <li><a href="">Recent</a></li>
-                            <li><a href="">Popular</a></li>
-                            <li><a href="">Categories</a></li>
-                        </ul>
-                </article>
-                <article>
-                    <h4>Permalinks</h4>
-                        <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">About</a></li>
-                            <li><a href="">Services</a></li>
-                            <li><a href="">Contact</a></li>
+                            <li><a href="#" target="_blank">Facebook</a></li>
+                            <li><a href="#" target="_blank">Instagram</a></li>
+                            <li><a href="#" target="_blank">Twitter</a></li>
+                            <li><a href="#" target="_blank">YouTube</a></li>
                         </ul>
                 </article>
               </div>
