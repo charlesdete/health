@@ -8,7 +8,7 @@
    <div class="main">
     <div class="navbar">
      <div class="icon">
-       <h2 class="logo">Health and Lifestyle</h2>
+       <h2 class="logo"><a href="home.php">Health and Lifestyle</a></h2>
          </div>
            <div class="menu">
             <ul>

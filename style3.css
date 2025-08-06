@@ -25,11 +25,18 @@
   height: 70px;
 }
 .logo {
-  color: #fff;
+  color: #ff7200;
   font-size: x-large;
   font-family: Arial, Helvetica, sans-serif;
   padding-left: 20px;
   padding-top: 10px;
+}
+.logo a {
+  color: #ff7200;
+  text-decoration: none;
+}
+.logo a:hover {
+  color: #ff9500;
 }
 .menu {
   width: auto;
