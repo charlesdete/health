@@ -18,11 +18,6 @@
             </ul> -->
            </div>
 
-           <div class="search">
-            <input class="srch" type="search" name="" placeholder="Type...">
-            <button class="bttn">Search</button>
-          </div>
-
          </div>
          <div class="content">
           <h1>Health<br><span>& </span> <br>Lifestyle </h1>
