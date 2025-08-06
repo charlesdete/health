@@ -1,11 +1,5 @@
 <?php
 session_start();
-$email=$_SESSION['Email'];
- if( empty($_SESSION['Email'])){
-    header('location:home.php');
-    exit();
-}
-// require('check-sess-cookies.php');
 include('db_conn.php');
 session_start();
 $user_id =$_SESSION['user_id'];

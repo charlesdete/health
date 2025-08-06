@@ -39,7 +39,7 @@ $posts = mysqli_query($conn, $query);
     <body>
           <nav>
             <div class="container nav_container">
-                <a href="index.php" class="nav_logo">Health and Lifestyle</a>
+                <a href="home.php" class="nav_logo">Health and Lifestyle</a>
              <ul class="nav_items">
                <li><a href="post.php">Post</a></li>
                <li><a href="about.php">About</a></li>

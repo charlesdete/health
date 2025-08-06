@@ -3,11 +3,6 @@
 // Assuming you have already started the session
 session_start();
 
-$email=$_SESSION['Email'];
- if( empty($_SESSION['Email'])){
-    header('location:home.php');
-    exit();
-}
 // Check if the form is submitted
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Retrieve the updated name and ID from the form

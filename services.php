@@ -1,11 +1,5 @@
 <?php
 session_start();
-
- $email=$_SESSION['Email'];
- if( empty($_SESSION['Email'])){
-    header('location:home.php');
-    exit();
-} 
 ?>
 
 <!DOCTYPE html>
@@ -22,7 +16,7 @@ session_start();
     <body>
           <nav>
             <div class="container nav_container">
-                <a href="index.php" class="nav_logo">Health and Lifestyle</a>
+                <a href="home.php" class="nav_logo">Health and Lifestyle</a>
              <ul class="nav_items">
                <li><a href="blog.php">Blog</a></li>
                <li><a href="about.php">About</a></li>

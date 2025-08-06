@@ -1,11 +1,5 @@
 <?php
 session_start();
-$email=$_SESSION['Email'];
- if( empty($_SESSION['Email'])){
-    header('location:home.php');
-    exit();
-}
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
