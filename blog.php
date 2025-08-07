@@ -1,11 +1,10 @@
-
 <?php
 $_SERVER['REQUEST_METHOD'] ==='POST';
 $servername = "localhost";
 $dbname = "triza";
 $dbusername = "root";
 $dbpassword = "";
- 
+
 $conn =mysqli_connect($servername,$dbusername,$dbpassword,$dbname);
 
 //check connection
@@ -36,32 +35,32 @@ $posts = mysqli_query($conn, $query);
                 margin-top: 4.5rem;
                 text-align: center;
             }
-            
+
             .blog-title {
                 font-size: 3rem;
                 color: white;
                 margin-bottom: 1rem;
                 font-weight: 700;
             }
-            
+
             .blog-subtitle {
                 font-size: 1.2rem;
                 color: rgba(255, 255, 255, 0.9);
                 max-width: 600px;
                 margin: 0 auto;
             }
-            
+
             .search_bar {
                 background: var(--color-gray-900);
                 padding: 40px 0;
                 margin: 0;
             }
-            
+
             .posts_section {
                 padding: 60px 0;
                 background: var(--color-bg);
             }
-            
+
             .posts_container {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -70,7 +69,7 @@ $posts = mysqli_query($conn, $query);
                 margin: 0 auto;
                 padding: 0 2rem;
             }
-            
+
             .posts {
                 background: var(--color-gray-900);
                 border-radius: 15px;
@@ -79,12 +78,12 @@ $posts = mysqli_query($conn, $query);
                 box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
                 height: auto;
             }
-            
+
             .posts:hover {
                 transform: translateY(-8px);
                 box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
             }
-            
+
             .posts::before {
                 content: '';
                 position: absolute;
@@ -94,7 +93,7 @@ $posts = mysqli_query($conn, $query);
                 height: 4px;
                 background: linear-gradient(90deg, var(--color-primary), var(--color-primary-variant));
             }
-            
+
             .no-posts {
                 text-align: center;
                 padding: 60px 20px;
@@ -103,18 +102,18 @@ $posts = mysqli_query($conn, $query);
                 margin: 2rem auto;
                 max-width: 500px;
             }
-            
+
             .no-posts h3 {
                 color: var(--color-primary);
                 margin-bottom: 1rem;
             }
-            
+
             .categories-section {
                 background: var(--color-gray-900);
                 padding: 40px 0;
                 margin-top: 60px;
             }
-            
+
             .category_button-container {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -123,7 +122,7 @@ $posts = mysqli_query($conn, $query);
                 margin: 0 auto;
                 padding: 0 2rem;
             }
-            
+
             .category_button {
                 background: var(--color-primary);
                 color: white;
@@ -134,7 +133,7 @@ $posts = mysqli_query($conn, $query);
                 text-decoration: none;
                 font-weight: 600;
             }
-            
+
             .category_button:hover {
                 background: var(--color-primary-variant);
                 transform: translateY(-2px);
@@ -145,7 +144,7 @@ $posts = mysqli_query($conn, $query);
     <body>
           <nav>
             <div class="container nav_container">
-                <a href="index.php" class="nav_logo">
+                <a href="home.php" class="nav_logo">
                     <i class="uil uil-heart-medical"></i>
                     Health & Lifestyle
                 </a>
@@ -153,7 +152,7 @@ $posts = mysqli_query($conn, $query);
                <li><a href="index.php"><i class="uil uil-home"></i> Home</a></li>
                <li><a href="about.php"><i class="uil uil-info-circle"></i> About</a></li>
                <li><a href="services.php"><i class="uil uil-medkit"></i> Services</a></li>
-               
+
                <li class="nav_profile">
                 <div style="display:inline-flex ;align-items: center;">
                     <div class="avatar">
@@ -169,7 +168,7 @@ $posts = mysqli_query($conn, $query);
                 </ul>
                 </li>
             </ul>
-    
+
            <button id="open_nav-btn"><i class="uil uil-bars"></i></button>
            <button id="close_nav-btn"><i class="uil uil-multiply"></i></button>
          </div>
@@ -182,7 +181,7 @@ $posts = mysqli_query($conn, $query);
                 <p class="blog-subtitle">Discover insights, tips, and inspiration for a healthier lifestyle</p>
             </div>
           </section>
-        
+
          <!-- Search Bar -->
          <section class="search_bar">
             <form class="container search_bar-container" action="search.php" method="GET">
@@ -193,7 +192,7 @@ $posts = mysqli_query($conn, $query);
                 <button type="submit" name="submit" class="btn search_btn">Search</button>
             </form>
            </section>
-          
+
            <!-- Posts Section -->
            <?php if(mysqli_num_rows($posts) > 0) : ?>
            <section class="posts_section">

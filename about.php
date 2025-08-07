@@ -114,7 +114,7 @@
     <body>
           <nav>
             <div class="container nav_container">
-                <a href="index.php" class="nav_logo">
+                <a href="home.php" class="nav_logo">
                     <i class="uil uil-heart-medical"></i>
                     Health & Lifestyle
                 </a>
