@@ -1,12 +1,5 @@
 
 <?php
-require('check-sess-cookies.php');
-
- $email=$_SESSION['Email'];
- if( empty($_SESSION['Email'])){
-    header('location:home.php');
-    exit();
-} 
 $_SERVER['REQUEST_METHOD'] ==='POST';
 $servername = "localhost";
 $dbname = "triza";

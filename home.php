@@ -364,7 +364,6 @@
                     <li><a href="blog.php">BLOG</a></li>
                     <li><a href="about.php">ABOUT</a></li>
                     <li><a href="services.php">SERVICES</a></li>
-                    <li><a href="login.php">LOGIN</a></li>
                 </ul>
             </div>
         </div>
@@ -387,7 +386,7 @@
             <p class="tagline">"Fuel Your Life: Where Healthy Choices Meet Vibrant Living!"</p>
             
             <div class="cta-buttons">
-                <a href="blog.php" class="btn btn-primary">
+                <a href="index.php" class="btn btn-primary">
                     <i class="uil uil-book-open"></i>
                     Explore Articles
                 </a>
