@@ -1,11 +1,5 @@
 <?php
-require('check-sess-cookies.php');
-
- $email=$_SESSION['Email'];
- if( empty($_SESSION['Email'])){
-    header('location:home.php');
-    exit();
-} 
+// Allow public access to read posts - no session required
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,28 +15,20 @@ require('check-sess-cookies.php');
     <body>
           <nav>
             <div class="container nav_container">
-                <a href="index.php" class="nav_logo">SPECTACULAR VIEWS</a>
+                <a href="index.php" class="nav_logo">
+                    <i class="uil uil-heart-medical"></i>
+                    Health & Lifestyle
+                </a>
              <ul class="nav_items">
-               <li><a href="blog.php">Blog</a></li>
-               <li><a href="about.php">About</a></li>
-               <li><a href="services.php">Services</a></li>
-               <li><a href="manage-post.php">Manage Post</a></li>
-               <li class="nav_profile">
-                <div style="display:inline-flex ;align-items: center;">
-                    <div class="avatar">
-                        <img src="https://images.unsplash.com/photo-1601625463687-25541fb72f62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80">
-                    </div>
-                    <div class="user">  
-                        <span>WELCOME</span>
-                    </div>
-                </div>
-            
-                
-                </li>
+               <li><a href="index.php"><i class="uil uil-home"></i> Home</a></li>
+               <li><a href="blog.php"><i class="uil uil-book-alt"></i> Blog</a></li>
+               <li><a href="about.php"><i class="uil uil-info-circle"></i> About</a></li>
+               <li><a href="services.php"><i class="uil uil-medkit"></i> Services</a></li>
+               <li><a href="login.php"><i class="uil uil-signin"></i> Login</a></li>
             </ul>
     
            <button id="open_nav-btn"><i class="uil uil-bars"></i></button>
-           <button id="close_nav-btn"><li class="uil uil-multiply"></li></button>
+           <button id="close_nav-btn"><i class="uil uil-multiply"></i></button>
          </div>
           </nav>   
           
@@ -110,7 +96,9 @@ if(!$conn){
                <img src="images<?= htmlspecialchars($post['Thumbnail']) ?>">
 
                 </div>
-            <p> <?=substr( $post['Body'],0, 300) ?>...</p>
+            <div class="post-content">
+                <?= nl2br(htmlspecialchars($post['Body'])) ?>
+            </div>
             </div>
           </section>
           <!---end of singlepost-->
